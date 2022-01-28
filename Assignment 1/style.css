@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Cookie&display=swap');
+
+body{
+    /* background-color: #f2f2f2; */
+    /* font-family: 'Open Sans', sans-serif; */
+    font-family: 'Cookie', cursive;
+    font-size: 40px;
+    color: #333;
+    margin-top: 100px;
+}
+
+th{
+    padding: 10px 20px;
+}
+
+#t{
+    font-size: 40px;
+    font-weight: bold;
+    color: #333;
+}
+
+button{
+    background-color: #bce0f8;
+    border: none;
+    font-size: 25px;
+    color: #333;
+    padding: 5px 20px;
+    cursor: pointer;
+}
+
+button:hover{
+    background-color: #46aff5;
+    color: #dad6d6;
+}
+
