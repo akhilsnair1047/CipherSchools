@@ -11,7 +11,7 @@ function TodoForm(props) {
      e.preventDefault();
 
      props.onSubmit({
-       id: Math.floor(Math.random() * 100),
+       id: Math.floor(Math.random() * 1000),
        text: input
      });
      setInput('');
@@ -19,7 +19,7 @@ function TodoForm(props) {
 
   return <div>
   <form className='todo-form' onSubmit={handleSubmit}>
-      <input type='text' placepholder='Enter todo' value={input} name='text' className='todo-input' onChange={handleChange}/>
+      <input type='text' placeholder='Add new todo' value={input} name='text' className='todo-input' onChange={handleChange}/>
       <br/>
       <button className='todo-button'>Submit</button>
       </form>
