@@ -1,4 +1,8 @@
 # CipherSchools - React Assignments 
 
 ### Assignment 1 - StopWatch
-<h2><a href="https://akhilsnair1047.github.io/CipherSchools/Assignment%201/">Stop Watch</a></h2>
+<h2><a href="https://github.com/akhilsnair1047/CipherSchools/tree/master/Assignment%201">Stop Watch</a></h2>
+
+### Assignment 2 - Todo
+<h2><a href="https://github.com/akhilsnair1047/CipherSchools/tree/master/Assignment%202/todo">Todo</a></h2>
+
