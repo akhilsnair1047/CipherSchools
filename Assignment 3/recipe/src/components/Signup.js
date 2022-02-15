@@ -1,7 +1,7 @@
 import React from 'react';
 import FormInput from './FormInput';
 import CustomButton from './CustomButton';
-import { Link, Navigate } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 
 // 0, null, NaN, '', undefined, false === false
 
@@ -14,11 +14,14 @@ const initailValues = {
   passwordError: ''
 }
 
+
 class Signup extends React.Component {
+  
 
   constructor(props) {
     super(props);
-    this.state = initailValues
+    this.state = initailValues;
+    
   }
 
   handleChange = (event) => {
@@ -60,13 +63,15 @@ class Signup extends React.Component {
   }
 
   handleSubmit = (event) => {
+    const navigate = useNavigate();
     event.preventDefault();
 
     let isValid = this.validate();
 
     if(isValid) {
-      console.log(this.state);  
-      this.setState(initailValues)
+      console.log(this.state);   
+      this.setState(initailValues);
+      navigate('/recipe');
     } else {
       console.log('Data is not valid');
     }

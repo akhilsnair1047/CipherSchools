@@ -9,21 +9,20 @@ function RecipeList() {
             id: 1,
             Date: "1/25/2022",
             text: 'Maggi',
-            body: `Add 2 cups of water to maggi and start boiling it. Add maggi masala when it gets warm. 
-            Wait for two minutes and you are done. Serve maggi hot in hostel style!`
+            body: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic autem praesentium possimus. Nihil soluta perferendis quisquam ducimus atque cum, repellat tenetur aspernatur voluptatum rem a, aperiam doloremque porro! Corrupti recusandae maiores harum totam officia quo velit error in aut, quae adipisci consequatur est dolorem, assumenda nostrum consequuntur. Hic veritatis, exercitationem reprehenderit et aut obcaecati ipsum atque architecto? Ipsum sit repudiandae nulla consectetur, quae excepturi quisquam dolores adipisci sequi tenetur sed neque fuga natus dignissimos alias doloremque nesciunt rerum nobis. Aut qui ratione omnis facilis perspiciatis ducimus suscipit magni, sequi molestias ab unde. Mollitia, architecto? Saepe voluptatem quos neque in odio aspernatur ipsa obcaecati odit culpa alias cum possimus eligendi, iste fugit corporis id deleniti ex cumque veritatis. Exercitationem pariatur praesentium deleniti cupiditate at rerum repudiandae aliquam necessitatibus, iste temporibus. Distinctio nisi optio neque ea, fugit minima ab maxime pariatur rem accusantium deleniti ad nostrum nihil repellat voluptas deserunt! Sed, eum!
+            `
+          
           },
           {
             id: 2,
             Date: '2/15/2022',
-            text: 'Mango Shake',
-            body: `Peel the mangoes and cut them into small cubes.
-            Add the mangoes to a bowl and add sugar, milk, and water.
-            Mix well using a mixer. Add ice cubes and mix well. And your mongo shake is ready. Enjoy!`
+            text: 'Pizza',
+            body: ` Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laborum, architecto ipsam autem vero voluptatem delectus nobis, itaque assumenda, molestias quod tempora fugit adipisci voluptas ea consequatur facere sint! Distinctio soluta eius eaque illum ad omnis, eligendi enim ut tempora quidem rem nostrum est facere magnam eveniet numquam quia quisquam. At, aliquid ipsam! Obcaecati, nulla assumenda! Amet quasi molestias fuga animi nulla inventore corporis dignissimos repellat facere dolores culpa voluptates, doloremque vero possimus voluptatibus velit veritatis vitae sapiente adipisci ipsum voluptas non ipsa. At doloremque perferendis quidem repudiandae mollitia? Ut aspernatur debitis veniam libero dicta suscipit. Mollitia illum ad aspernatur ab.`
       
           }
     ]);
-    
-    
+   
+  
     const addRecipe = recipe => {
         if(!recipe.text || /^\s*$/.test(recipe.text)) {
             return
