@@ -4,7 +4,24 @@ import Recipe from './Recipe';
 import RecipeForm from './RecipeForm';
 
 function RecipeList() {
-    const [recipes, setRecipes] = useState([]);
+    const [recipes, setRecipes] = useState([
+        {
+            id: 1,
+            // date: 1644858399325,
+            text: 'Maggi',
+            body: `Add 2 cups of water to maggi and start boiling it. Add maggi masala when it gets warm. 
+            Wait for two minutes and you are done. Serve maggi hot in hostel style!`
+          },
+          {
+            id: 2,
+            // date: 1644858399325,
+            text: 'Mango Shake',
+            body: `Peel the mangoes and cut them into small cubes.
+            Add the mangoes to a bowl and add sugar, milk, and water.
+            Mix well using a mixer. Add ice cubes and mix well. And your mongo shake is ready. Enjoy!`
+      
+          }
+    ]);
     
     
     const addRecipe = recipe => {
@@ -33,7 +50,7 @@ function RecipeList() {
     }
 
   return <div>
-      {/* <h1 className='main'>Recipe List</h1> */}
+      <h2 className=''>Add Recipe</h2>
 
       {/* <h3>Add Recipe</h3>
       <Link to="/blogs">
@@ -41,6 +58,8 @@ function RecipeList() {
             <button className="btn btn-success ">Add</button>
           </Link> */}
       <RecipeForm onSubmit={addRecipe}/>
+      <br/>
+      <h2>Recipe List</h2>
       <Recipe recipes={recipes} completeRecipe={completeRecipe} removeRecipe={removeRecipe}/>
   </div>;
 }

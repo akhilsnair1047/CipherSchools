@@ -1,7 +1,6 @@
 import './App.css';
 import { Route, Routes } from 'react-router-dom';
-import Blog from './components/Blog';
-import BlogPage from './components/BlogPage';
+
 import Header from './components/Header';
 import Home from './components/Home';
 import Login from './components/Login';
@@ -16,9 +15,6 @@ function App() {
 		  {/* <Home /> */}
 			<Routes>
 				<Route path="/" element={<Login />} />
-				<Route path="/blogs" element={<BlogPage />}>
-					<Route path=':blogid' element={<Blog />}/>
-				</Route>
 				<Route path="/login" element={<Login />} />
 				<Route path="/signup" element={<Signup />} />
 				<Route path="/recipe" element={<Recipe />} />

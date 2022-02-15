@@ -2,7 +2,9 @@
   display: flex;
   justify-content: center;
 } */
-
+body{
+  background-color: rgb(187, 187, 187)
+}
 .login-form {
   margin: 20px;
   width: 400px;
@@ -13,7 +15,22 @@
   align-items: center;
   background-color: rgb(110, 180, 245);
 }
-
+.title-input{
+  /* margin-top: 15px; */
+  width: 60%;
+  height: 30px;
+  border: 2px solid black;
+  border-radius: 5px;
+  padding: 5px;
+}
+.body-input{
+  margin: 10px;
+  width: 60%;
+  height: 100px;
+  border: 2px solid black;
+  border-radius: 5px;
+  padding: 5px;
+}
 .input-container {
   margin: 20px auto 20px;
 }
