@@ -1,6 +1,8 @@
 
 body{
-  background-color: rgb(224, 224, 224)
+  background-color: rgb(224, 224, 224);
+  margin: 0;
+  font-family: Roboto,sans-serif;
 }
 
 nav{
@@ -9,6 +11,7 @@ nav{
   align-items: center;
   background-color: rgb(0, 0, 0);
   border-bottom: 1px solid black;
+  font-weight: bold;
 }
 .header{
   display: flex;
@@ -16,7 +19,7 @@ nav{
   align-items: center;
   color: rgb(255, 255, 255);
   border-bottom: 1px solid black;
-  padding-left: 20px;
+  padding-left: 30px;
 }
 .container{
   display: flex;
