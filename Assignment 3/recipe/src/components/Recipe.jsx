@@ -1,33 +1,33 @@
 import React, { useState } from "react";
-import TodoForm from "./TodoForm";
+import RecipeForm from "./RecipeForm";
 import { AiOutlineCheckSquare } from "react-icons/ai";
 import { AiOutlineCloseSquare } from "react-icons/ai";
 
-function Todo({ todos, completeTodo, removeTodo }) {
+function Recipe({ recipes, completeRecipe, removeRecipe }) {
   const [edit, setEdit] = useState({
     id: null,
     value: "",
   });
-  return todos.map((todo, index) => (
+  return recipes.map((recipe, index) => (
     <div
-      className={todo.isComplete ? "todo-row complete" : "todo-row"}
+      className={recipe.isComplete ? "recipe-row complete" : "recipe-row"}
       key={index}
     >
      
       <div className="title">
-            {todo.text}
+            {recipe.text}
       </div>
             <br/>
       <div className="body">
-          {todo.body}
+          {recipe.body}
       </div>
 
       <div className="icons">
         
-        {/* <AiOutlineCheckSquare key={todo.id} onClick={() => completeTodo(todo.id)} className="complete-item" /> */}
+        {/* <AiOutlineCheckSquare key={recipe.id} onClick={() => completeRecipe(recipe.id)} className="complete-item" /> */}
 
         <AiOutlineCloseSquare
-          onClick={() => removeTodo(todo.id)}
+          onClick={() => removeRecipe(recipe.id)}
           className="delete-item"
         />
       </div>
@@ -35,4 +35,4 @@ function Todo({ todos, completeTodo, removeTodo }) {
   ));
 }
 
-export default Todo;
+export default Recipe;

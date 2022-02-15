@@ -57,7 +57,7 @@ function Login() {
 
     if(isValid) {
       updateState((prevState) => ({...prevState, user: true}));
-      navigate('/todo');
+      navigate('/recipe');
     } else {
       console.log('Data is not valid');
     }

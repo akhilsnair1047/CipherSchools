@@ -6,7 +6,7 @@ import Header from './components/Header';
 import Home from './components/Home';
 import Login from './components/Login';
 import Signup from './components/Signup';
-import Todo from './components/TodoList'
+import Recipe from './components/RecipeList'
 
 function App() {
 	return (
@@ -21,7 +21,7 @@ function App() {
 				</Route>
 				<Route path="/login" element={<Login />} />
 				<Route path="/signup" element={<Signup />} />
-				<Route path="/todo" element={<Todo />} />
+				<Route path="/recipe" element={<Recipe />} />
 			
 			</Routes>
 		  </center>

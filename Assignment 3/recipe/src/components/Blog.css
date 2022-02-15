@@ -2,7 +2,7 @@
     width: 50%;
 }
 
-.todo-app{
+.recipe-app{
     margin:20px 300px;
   }
   
@@ -25,7 +25,7 @@
     border-radius: 5px;
     /* width: 100%; */
   }
-  .todo-row {
+  .recipe-row {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -63,10 +63,10 @@
   }
   
   @media screen and (max-width: 700px) {
-    .todo-app {
+    .recipe-app {
       margin:20px 50px;
     }
-    .todo-row {
+    .recipe-row {
      
       width: 90%;
     }
