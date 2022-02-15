@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/CipherSchools/static/css/main.a2d12483.css",
-    "main.js": "/CipherSchools/static/js/main.b55b6e5f.js",
+    "main.css": "/CipherSchools/static/css/main.155df6a1.css",
+    "main.js": "/CipherSchools/static/js/main.a462efe7.js",
     "static/js/787.e3d3b41c.chunk.js": "/CipherSchools/static/js/787.e3d3b41c.chunk.js",
     "index.html": "/CipherSchools/index.html",
-    "main.a2d12483.css.map": "/CipherSchools/static/css/main.a2d12483.css.map",
-    "main.b55b6e5f.js.map": "/CipherSchools/static/js/main.b55b6e5f.js.map",
+    "main.155df6a1.css.map": "/CipherSchools/static/css/main.155df6a1.css.map",
+    "main.a462efe7.js.map": "/CipherSchools/static/js/main.a462efe7.js.map",
     "787.e3d3b41c.chunk.js.map": "/CipherSchools/static/js/787.e3d3b41c.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.a2d12483.css",
-    "static/js/main.b55b6e5f.js"
+    "static/css/main.155df6a1.css",
+    "static/js/main.a462efe7.js"
   ]
 }
