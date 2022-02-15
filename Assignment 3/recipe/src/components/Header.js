@@ -47,7 +47,7 @@ function Header() {
 					</NavLink>
 				</li>
 			</ul> */}
-			<h1 className='header'>Welcome to Recipe Application</h1>
+			<h1 className='header'>Recipe App</h1>
 		</nav>
 	);
 }

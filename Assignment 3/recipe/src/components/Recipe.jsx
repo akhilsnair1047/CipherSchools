@@ -23,14 +23,15 @@ function Recipe({ recipes, completeRecipe, removeRecipe }) {
           {recipe.body}
       </div>
       <hr/>
+      
       <div className="icons">
         
         {/* <AiOutlineCheckSquare key={recipe.id} onClick={() => completeRecipe(recipe.id)} className="complete-item" /> */}
-             
-        <AiFillDelete
+        {recipe.Date}
+        <div
           onClick={() => removeRecipe(recipe.id)}
           className="delete-item"
-        />
+        >Delete Recipe </div>
       </div>
     </div>
   ));

@@ -20,6 +20,7 @@ function RecipeForm(props) {
        id: Math.floor(Math.random() * 1000),
        text: input1,
        body: input2,
+       Date: new Date().toLocaleDateString(),
        
      });
      setInput('');

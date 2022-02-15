@@ -9,11 +9,14 @@ import Recipe from './components/RecipeList'
 
 function App() {
 	return (
-		<div className="App">
+		<>
+		  <Header />
+		<div className="container">
 	      <center>
-			  <Header />
+			
 		  {/* <Home /> */}
 			<Routes>
+				{/* <Route path="/CipherSchools" element={<Login />} /> */}
 				<Route path="/" element={<Login />} />
 				<Route path="/login" element={<Login />} />
 				<Route path="/signup" element={<Signup />} />
@@ -22,6 +25,7 @@ function App() {
 			</Routes>
 		  </center>
 		</div>
+		</>
 	);
 }
 
