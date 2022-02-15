@@ -5,7 +5,7 @@ import './Header.css';
 function Header() {
 	return (
 		<nav>
-			<ul>
+			{/* <ul>
 				<li>
 					<NavLink
 						to={'/'}
@@ -46,7 +46,8 @@ function Header() {
 						Login
 					</NavLink>
 				</li>
-			</ul>
+			</ul> */}
+			<h1 className='header'>Welcome to Recipe Application</h1>
 		</nav>
 	);
 }

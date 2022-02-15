@@ -13,11 +13,18 @@ function Todo({ todos, completeTodo, removeTodo }) {
       className={todo.isComplete ? "todo-row complete" : "todo-row"}
       key={index}
     >
-      {todo.text}
+     
+      <div className="title">
+            {todo.text}
+      </div>
+            <br/>
+      <div className="body">
+          {todo.body}
+      </div>
 
       <div className="icons">
         
-        <AiOutlineCheckSquare key={todo.id} onClick={() => completeTodo(todo.id)} className="complete-item" />
+        {/* <AiOutlineCheckSquare key={todo.id} onClick={() => completeTodo(todo.id)} className="complete-item" /> */}
 
         <AiOutlineCloseSquare
           onClick={() => removeTodo(todo.id)}

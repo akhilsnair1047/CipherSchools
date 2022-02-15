@@ -1,10 +1,16 @@
 import React,{ useState } from 'react';
  
 function TodoForm(props) {
-    const [input, setInput] = useState('');
+    const [input1, setInput] = useState('');
+    const [input2, setBody] = useState('');
     
     const handleChange = e => {
       setInput(e.target.value);
+     
+    };
+    const handleChangeBody = e => {
+     
+      setBody(e.target.value);
     };
 
     const handleSubmit = e => {
@@ -12,14 +18,19 @@ function TodoForm(props) {
 
      props.onSubmit({
        id: Math.floor(Math.random() * 1000),
-       text: input
+       text: input1,
+       body: input2
+       
      });
      setInput('');
+     setBody('');
     };
 
   return <div>
   <form className='todo-form' onSubmit={handleSubmit}>
-      <input type='text' placeholder='Add new todo' value={input} name='text' className='todo-input' onChange={handleChange}/>
+      <input type='text' placeholder='Add Title' value={input1} name='text' className='title-input' onChange={handleChange}/>
+      <br/>
+      <textarea type='text' placeholder='Add Recipe' value={input2} name='text1' className='body-input' onChange={handleChangeBody}/>
       <br/>
       <button className='todo-button'>Submit</button>
       </form>

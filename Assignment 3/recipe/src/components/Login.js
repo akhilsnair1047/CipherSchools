@@ -57,7 +57,7 @@ function Login() {
 
     if(isValid) {
       updateState((prevState) => ({...prevState, user: true}));
-      navigate('/blogs');
+      navigate('/todo');
     } else {
       console.log('Data is not valid');
     }
